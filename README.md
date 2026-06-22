@@ -8,7 +8,7 @@ The experiment is part of the thesis project:
 
 The live experiment prototype can be accessed through GitHub Pages:
 
-**Experiment link:** [https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/]
+**Experiment link:** [https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/](https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/)
 
 The executable prototype file is stored in:
 
@@ -120,7 +120,7 @@ The `node_modules/` folder is not included in this repository. Backend dependenc
 
 The experiment prototype is available online through GitHub Pages:
 
-[https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/]
+[https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/](https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/)
 
 The local executable version is included in this repository as:
 
@@ -165,7 +165,7 @@ This repository is configured to host the experiment prototype through **GitHub 
 
 The live experiment page is available at:
 
-[https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/]
+[https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/](https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/)
 
 The executable version used for the digital submission is retained in:
 
