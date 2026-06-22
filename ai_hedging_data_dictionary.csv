@@ -1,0 +1,16 @@
+﻿file,column,description
+ai_hedging_clean_trials_long.csv,participant_id,Anonymised participant identifier.
+ai_hedging_clean_trials_long.csv,condition,"Experimental condition: C1 No hedge + Text, C2 Hedge + Text, C3 No hedge + Speech, C4 Hedge + Speech."
+ai_hedging_clean_trials_long.csv,hedging,"0 = no hedging, 1 = hedging."
+ai_hedging_clean_trials_long.csv,modality,"0 = text, 1 = synthetic speech."
+ai_hedging_clean_trials_long.csv,correctness,"Whether the assistant answer shown to the participant was factually correct: 1 = correct, 0 = incorrect."
+ai_hedging_clean_trials_long.csv,verified,Derived variable. 1 when verify was clicked or evidence was opened.
+ai_hedging_clean_trials_long.csv,accepted,Derived variable. 1 when final decision was Accept.
+ai_hedging_clean_trials_long.csv,rejected,Derived variable. 1 when final decision was Reject.
+ai_hedging_clean_trials_long.csv,final_accuracy,Whether the participant final decision was correct.
+ai_hedging_clean_trials_long.csv,overreliance_error,Derived variable. 1 when an incorrect answer was accepted.
+ai_hedging_clean_trials_long.csv,underreliance_error,Derived variable. 1 when a correct answer was rejected.
+ai_hedging_clean_participants.csv,trust_score_mean,Participant-level mean trust score from the trust questionnaire.
+ai_hedging_clean_participants.csv,nasa_tlx_raw_mean,Participant-level mean raw NASA-TLX workload score.
+ai_hedging_clean_participants.csv,manipulation_uncertainty,Manipulation check item for perceived uncertainty.
+ai_hedging_clean_participants.csv,manipulation_certainty,Manipulation check item for perceived certainty.
