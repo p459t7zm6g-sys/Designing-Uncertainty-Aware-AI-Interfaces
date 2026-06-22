@@ -8,12 +8,12 @@ The experiment is part of the thesis project:
 
 The live experiment prototype can be accessed through GitHub Pages:
 
-**Experiment link:** [https://mandydamsteegt.github.io/Master_Thesis/](https://mandydamsteegt.github.io/Master_Thesis/)
+**Experiment link:** [https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/]
 
 The executable prototype file is stored in:
 
 ```text
-prototype/executable/index.html
+prototype/index.html
 ```
 
 The final data analysis reported in the thesis was conducted using:
@@ -76,18 +76,17 @@ The final sample consisted of **72 participants**, with **18 participants per co
 ├── README.md
 │
 ├── analysis_outputs/
-│   └── figures/
-│       ├── manipulation_check_uncertainty_certainty.png
-│       ├── hedging_effect_verification_correctness.png
-│       ├── srq1_verification_by_hedging_and_correctness.png
-│       ├── srq2_acceptance_incorrect_answers_by_condition.png
-│       ├── srq3_interaction_hedging_modality_accuracy.png
-│       ├── srq3_interaction_hedging_modality_verification.png
-│       ├── srq4_final_accuracy_across_blocks.png
-│       └── srq4_verification_rate_across_blocks.png
+│   ├── manipulation_check_uncertainty_certainty.png
+│   ├── hedging_effect_verification_correctness.png
+│   ├── srq1_verification_by_hedging_and_correctness.png
+│   ├── srq2_acceptance_incorrect_answers_by_condition.png
+│   ├── srq3_interaction_hedging_modality_accuracy.png
+│   ├── srq3_interaction_hedging_modality_verification.png
+│   ├── srq4_final_accuracy_across_blocks.png
+│   └── srq4_verification_rate_across_blocks.png
 │
 ├── data/
-│   ├── rawdata/
+│   ├── raw/
 │   │   └── data tijdelijk.docx
 │   │
 │   ├── clean/
@@ -102,23 +101,18 @@ The final sample consisted of **72 participants**, with **18 participants per co
 │       └── Data Analyse Defi (4).ipynb
 │
 ├── prototype/
-│   └── executable/
-│       └── index.html
+    └── index.html
 │
-├── ai_backhand_server/
+├── ai_backend_server/
 │   ├── README_AI_Backend.md
 │   ├── package.json
 │   ├── package-lock.json
 │   └── server.js
-│
-└── misc/
-    ├── exclusion_or_data_quality_notes.txt
-    └── participant_notes.csv
 ```
 
-The `ai_backhand_server/` folder contains the backend service that was used during data collection. The backend files are grouped in this folder so that the frontend prototype, analysis files, and backend infrastructure remain clearly separated.
+The `ai_backend_server/` folder contains the backend service that was used during data collection. The backend files are grouped in this folder so that the frontend prototype, analysis files, and backend infrastructure remain clearly separated.
 
-The `node_modules/` folder is not included in this repository. Backend dependencies can be installed locally from `package.json` by running `npm install` inside the `ai_backhand_server/` folder.
+The `node_modules/` folder is not included in this repository. Backend dependencies can be installed locally from `package.json` by running `npm install` inside the `ai_backend_server/` folder.
 
 ---
 
@@ -126,18 +120,18 @@ The `node_modules/` folder is not included in this repository. Backend dependenc
 
 The experiment prototype is available online through GitHub Pages:
 
-[https://mandydamsteegt.github.io/Master_Thesis/](https://mandydamsteegt.github.io/Master_Thesis/)
+[https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/]
 
 The local executable version is included in this repository as:
 
 ```text
-prototype/executable/index.html
+prototype/index.html
 ```
 
 The experiment can therefore be inspected or re-run in two ways:
 
 1. Open the online GitHub Pages version.
-2. Open the local `prototype/executable/index.html` file in a modern browser.
+2. Open the local `prototype/index.html` file in a modern browser.
 
 ---
 
@@ -149,7 +143,7 @@ To run the prototype locally:
 2. Open the following file in a modern browser:
 
    ```text
-   prototype/executable/index.html
+   prototype/index.html
    ```
 
 3. Start the study from the landing page.
@@ -171,15 +165,15 @@ This repository is configured to host the experiment prototype through **GitHub 
 
 The live experiment page is available at:
 
-[https://mandydamsteegt.github.io/Master_Thesis/](https://mandydamsteegt.github.io/Master_Thesis/)
+[https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/]
 
 The executable version used for the digital submission is retained in:
 
 ```text
-prototype/executable/index.html
+prototype/index.html
 ```
 
-Depending on the GitHub Pages configuration, a root-level `index.html` may be used to redirect or serve the hosted version, while the version in `prototype/executable/` remains the documented prototype file for inspection and submission.
+Depending on the GitHub Pages configuration, a root-level `index.html` may be used to redirect or serve the hosted version, while the version in `prototype` remains the documented prototype file for inspection and submission.
 
 ---
 
@@ -286,16 +280,16 @@ During data collection, completed participant sessions were sent from the browse
 The backend files are stored in:
 
 ```text
-ai_backhand_server/
+ai_backend_server/
 ```
 
 This folder includes:
 
 ```text
-ai_backhand_server/README.md
-ai_backhand_server/package.json
-ai_backhand_server/package-lock.json
-ai_backhand_server/server.js
+ai_backend_server/README.md
+ai_backend_server/package.json
+ai_backend_server/package-lock.json
+ai_backend_server/server.js
 ```
 
 The backend was used to:
@@ -313,7 +307,7 @@ No private credentials, API keys, passwords, database connection strings, secret
 More details about the backend setup are provided in:
 
 ```text
-ai_backhand_server/README.md
+README_AI_Backend.md
 ```
 
 ---
@@ -353,7 +347,7 @@ The repository includes raw and cleaned data files used for the thesis analysis.
 The raw data export is stored in:
 
 ```text
-data/rawdata/data tijdelijk.docx
+data/raw/data tijdelijk.docx
 ```
 
 This file contains the original participant-level data export obtained from the backend/server export route:
@@ -436,8 +430,8 @@ The cleaning and preparation process consisted of the following steps:
 
    - **C1:** No hedge + Text
    - **C2:** Hedge + Text
-   - **C3:** No hedge + Speech
-   - **C4:** Hedge + Speech
+   - **C3:** No hedge + Speech + Text
+   - **C4:** Hedge + Speech + Text
 
 4. **Checking trial completeness**  
    Each participant was expected to complete **30 main trials**. The final dataset therefore contained **2160 trial-level observations**.
@@ -492,7 +486,7 @@ The cleaning and preparation process consisted of the following steps:
     The cleaned datasets were used in `Data Analyse Defi (4).ipynb` to generate the final figures stored in:
 
     ```text
-    analysis_outputs/figures/
+    analysis_output
     ```
 
 The final cleaned data files are therefore derived from the backend/server exports and are the files used for the final thesis analysis.
@@ -688,7 +682,7 @@ data/clean/
 The figures generated from the final analysis notebook are stored in:
 
 ```text
-analysis_outputs/figures/
+analysis_output
 ```
 
 Included figures:
@@ -767,7 +761,7 @@ To reproduce the final reported analysis:
 5. Compare the generated outputs with the figures in:
 
    ```text
-   analysis_outputs/figures/
+   analysis_output
    ```
 
 The original data collection exports were obtained from the backend/server using the download routes listed in the **Data storage and export** section. For the final thesis analysis, the relevant exported data were stored locally and processed into the cleaned CSV files in:
@@ -781,17 +775,17 @@ The final analysis does not require live access to the backend server.
 To inspect the original raw export:
 
 ```text
-data/rawdata/data tijdelijk.docx
+data/raw/data tijdelijk.docx
 ```
 
 To re-run or inspect the prototype, use the GitHub Pages link:
 
-[https://mandydamsteegt.github.io/Master_Thesis/](https://mandydamsteegt.github.io/Master_Thesis/)
+[https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/]
 
 or open the local file:
 
 ```text
-prototype/executable/index.html
+prototype/index.html
 ```
 
 ---
@@ -808,19 +802,7 @@ The final analysis reported in the thesis was conducted using:
 data/scripts/Data Analyse Defi (4).ipynb
 ```
 
-The figures in `analysis_outputs/figures/` were generated from this final analysis notebook.
-
----
-
-## Participant notes
-
-Participant-level notes are stored in:
-
-```text
-misc/participant_notes.csv
-```
-
-The participant notes file records that no notable participant-level issues or irregularities were recorded during data collection.
+The figures in `analysis_output` were generated from this final analysis notebook.
 
 ---
 
@@ -881,7 +863,7 @@ node_modules/
 .env
 ```
 
-The `node_modules/` folder can be recreated by running `npm install` inside the `ai_backhand_server/` folder. The `.DS_Store` file is a local macOS system file and is not needed for the project. Environment files should not be uploaded because they may contain private configuration values.
+The `node_modules/` folder can be recreated by running `npm install` inside the `ai_backend_server/` folder. The `.DS_Store` file is a local macOS system file and is not needed for the project. Environment files should not be uploaded because they may contain private configuration values.
 
 ---
 
@@ -894,7 +876,7 @@ backend/server exports
 → local raw and structured exports
 → data/clean/
 → data/scripts/Data Analyse Defi (4).ipynb
-→ analysis_outputs/figures/
+→ analysis_output
 ```
 
 The backend code is included for transparency about how data were collected and exported, but the final thesis analysis can be reproduced from the cleaned data and final analysis notebook included in this repository.
