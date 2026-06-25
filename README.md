@@ -855,7 +855,7 @@ Data are stored with anonymous participant/session identifiers and are intended 
 
 ## Files not included
 
-The following files or folders should not be included in this repository:
+The following files or folders are not included in this repository:
 
 ```text
 node_modules/
@@ -863,7 +863,7 @@ node_modules/
 .env
 ```
 
-The `node_modules/` folder can be recreated by running `npm install` inside the `ai_backend_server/` folder. The `.DS_Store` file is a local macOS system file and is not needed for the project. Environment files should not be uploaded because they may contain private configuration values.
+The `node_modules/` folder can be recreated by running `npm install` inside the `ai_backend_server/` folder. The `.DS_Store` file is a local macOS system file and is not needed for the project.
 
 ---
 
