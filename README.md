@@ -10,12 +10,6 @@ The live experiment prototype can be accessed through GitHub Pages:
 
 **Experiment link:** [https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/](https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/)
 
-The executable prototype file is stored in:
-
-```text
-prototype/index.html
-```
-
 The final data analysis reported in the thesis was conducted using:
 
 ```text
@@ -75,7 +69,7 @@ The final sample consisted of **72 participants**, with **18 participants per co
 .
 ├── README.md
 │
-├── analysis_outputs/
+├── analysis_output/
 │   ├── manipulation_check_uncertainty_certainty.png
 │   ├── hedging_effect_verification_correctness.png
 │   ├── srq1_verification_by_hedging_and_correctness.png
@@ -101,13 +95,13 @@ The final sample consisted of **72 participants**, with **18 participants per co
 │       └── Data Analyse Defi (4).ipynb
 │
 ├── prototype/
-    └── index.html
+│   └── index.html
 │
-├── ai_backend_server/
-│   ├── README_AI_Backend.md
-│   ├── package.json
-│   ├── package-lock.json
-│   └── server.js
+└── ai_backend_server/
+    ├── README_AI_Backend.md
+    ├── package.json
+    ├── package-lock.json
+    └── server.js
 ```
 
 The `ai_backend_server/` folder contains the backend service that was used during data collection. The backend files are grouped in this folder so that the frontend prototype, analysis files, and backend infrastructure remain clearly separated.
@@ -133,6 +127,8 @@ The experiment can therefore be inspected or re-run in two ways:
 1. Open the online GitHub Pages version.
 2. Open the local `prototype/index.html` file in a modern browser.
 
+Depending on the GitHub Pages configuration, a root-level `index.html` may be used to redirect or serve the hosted version, while the version in `prototype/` remains the documented prototype file for inspection and submission.
+
 ---
 
 ## Running the prototype locally
@@ -156,24 +152,6 @@ Recommended browsers:
 - Firefox
 
 Speech synthesis availability may differ between browsers and operating systems. For the speech conditions, audio playback should be enabled and the device volume should be set to a comfortable level.
-
----
-
-## GitHub Pages
-
-This repository is configured to host the experiment prototype through **GitHub Pages**.
-
-The live experiment page is available at:
-
-[https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/](https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/)
-
-The executable version used for the digital submission is retained in:
-
-```text
-prototype/index.html
-```
-
-Depending on the GitHub Pages configuration, a root-level `index.html` may be used to redirect or serve the hosted version, while the version in `prototype` remains the documented prototype file for inspection and submission.
 
 ---
 
@@ -286,7 +264,7 @@ ai_backend_server/
 This folder includes:
 
 ```text
-ai_backend_server/README.md
+ai_backend_server/README_AI_Backend.md
 ai_backend_server/package.json
 ai_backend_server/package-lock.json
 ai_backend_server/server.js
@@ -307,7 +285,7 @@ No private credentials, API keys, passwords, database connection strings, secret
 More details about the backend setup are provided in:
 
 ```text
-README_AI_Backend.md
+ai_backend_server/README_AI_Backend.md
 ```
 
 ---
@@ -350,21 +328,9 @@ The raw data export is stored in:
 data/raw/data tijdelijk.docx
 ```
 
-This file contains the original participant-level data export obtained from the backend/server export route:
-
-```text
-https://ai-hedging-backend.onrender.com/api/download-all
-```
+This file contains the original participant-level data export obtained from the backend/server export routes described above.
 
 The raw export contains all completed participant sessions and includes participant metadata, condition assignment, questionnaire responses, post-task responses, qualitative responses, and trial-level logs.
-
-The server also provided structured CSV export routes for participant-level, trial-level, and qualitative response data:
-
-```text
-https://ai-hedging-backend.onrender.com/api/download-participants-csv
-https://ai-hedging-backend.onrender.com/api/download-trials-csv
-https://ai-hedging-backend.onrender.com/api/download-interviews-csv
-```
 
 The exported files were downloaded locally from the server and then used as the basis for the cleaned datasets in:
 
@@ -412,10 +378,6 @@ Where applicable, information not required for reproducing the analysis was remo
 ## From raw data to cleaned data
 
 The cleaned data files were created from the backend/server exports. The cleaning process was documented alongside the final analysis workflow. The final analysis notebook uses the cleaned CSV files to reproduce the analyses and figures reported in the thesis.
-
-```text
-data/scripts/Data Analyse Defi (4).ipynb
-```
 
 The cleaning and preparation process consisted of the following steps:
 
@@ -486,7 +448,7 @@ The cleaning and preparation process consisted of the following steps:
     The cleaned datasets were used in `Data Analyse Defi (4).ipynb` to generate the final figures stored in:
 
     ```text
-    analysis_output
+    analysis_output/
     ```
 
 The final cleaned data files are therefore derived from the backend/server exports and are the files used for the final thesis analysis.
@@ -682,7 +644,7 @@ data/clean/
 The figures generated from the final analysis notebook are stored in:
 
 ```text
-analysis_output
+analysis_output/
 ```
 
 Included figures:
@@ -761,7 +723,7 @@ To reproduce the final reported analysis:
 5. Compare the generated outputs with the figures in:
 
    ```text
-   analysis_output
+   analysis_output/
    ```
 
 The original data collection exports were obtained from the backend/server using the download routes listed in the **Data storage and export** section. For the final thesis analysis, the relevant exported data were stored locally and processed into the cleaned CSV files in:
@@ -780,7 +742,7 @@ data/raw/data tijdelijk.docx
 
 To re-run or inspect the prototype, use the GitHub Pages link:
 
-[https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/]
+[https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/](https://p459t7zm6g-sys.github.io/Designing-Uncertainty-Aware-AI-Interfaces/prototype/)
 
 or open the local file:
 
@@ -792,17 +754,9 @@ prototype/index.html
 
 ## Data quality and exclusions
 
-No participants were excluded from the final dataset.
+No participants were excluded from the final dataset. The final dataset therefore retained the full planned sample.
 
-The final sample consisted of **72 participants**, with **18 participants per condition**. Each participant completed **30 main trials**, resulting in **2160 trial-level observations**.
-
-The final analysis reported in the thesis was conducted using:
-
-```text
-data/scripts/Data Analyse Defi (4).ipynb
-```
-
-The figures in `analysis_output` were generated from this final analysis notebook.
+The figures in `analysis_output/` were generated from the final analysis notebook.
 
 ---
 
@@ -876,7 +830,7 @@ backend/server exports
 → local raw and structured exports
 → data/clean/
 → data/scripts/Data Analyse Defi (4).ipynb
-→ analysis_output
+→ analysis_output/
 ```
 
 The backend code is included for transparency about how data were collected and exported, but the final thesis analysis can be reproduced from the cleaned data and final analysis notebook included in this repository.
