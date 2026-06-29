@@ -131,6 +131,20 @@ Depending on the GitHub Pages configuration, a root-level `index.html` may be us
 
 ---
 
+## Prototype walkthrough videos
+
+The four prototype walkthrough videos are shared privately with the supervisor through a UvA SharePoint folder.
+
+The videos correspond to the four experimental conditions:
+
+- C1: No hedge + Text
+- C2: Hedge + Text
+- C3: No hedge + Speech + Text
+- C4: Hedge + Speech + Text
+
+The video files are not included directly in this repository because of file size and private access considerations.
+
+
 ## Running the prototype locally
 
 To run the prototype locally:
